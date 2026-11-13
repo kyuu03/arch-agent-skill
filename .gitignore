@@ -1,0 +1,15 @@
+/local-data/
+/.local/
+local.config.json
+*.local.json
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.venv/
+*.log
+runtime.json
+.DS_Store
+Thumbs.db
+*.acpack.json
+!examples/*.acpack.json
