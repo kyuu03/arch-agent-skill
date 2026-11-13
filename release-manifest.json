@@ -44,8 +44,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 715,
-      "sha256": "8c9e91b4b148dc60e6e3345caa2530cc065f38569e5d508d6cf28d0ad4897f48"
+      "bytes": 1033,
+      "sha256": "80ce2117b6021b3a36601b2a427e34c4e55e68594a37cd999a212a02048ad337"
     },
     {
       "path": "config.example.json",
@@ -66,6 +66,11 @@
       "path": "docs/DATA-FORMAT.md",
       "bytes": 3831,
       "sha256": "8f617c3f98909491351b5c88f73cee24a93f0c40e5f3224f2416099a535cd332"
+    },
+    {
+      "path": "docs/EFFICIENCY-PATCH.md",
+      "bytes": 2255,
+      "sha256": "b2ab83b8d29952c087b75b10b5e582a3e645b97a41a527ed02730b16f08f07ce"
     },
     {
       "path": "docs/UPGRADE.md",
@@ -129,13 +134,13 @@
     },
     {
       "path": "skills/architecture-collaboration/references/dialogue.md",
-      "bytes": 4405,
-      "sha256": "9fc2388b6490341411d91c061a9a7666fffaadab18b7ca50118e2a8eb5d4428d"
+      "bytes": 4535,
+      "sha256": "90a3df36bf9a138501a095023560cc2fe6945603005e78e16d657156d363a7a4"
     },
     {
       "path": "skills/architecture-collaboration/references/execution.md",
-      "bytes": 7975,
-      "sha256": "291e66a09193bdee556cfda5cb0c6f4b1205b4c32f87d631958bcfd81558dee0"
+      "bytes": 8304,
+      "sha256": "7c8e3898ae08f19c605d59f4764bc8786e7e71d408ad66ddccc41d5e6f5d60d3"
     },
     {
       "path": "skills/architecture-collaboration/references/experts.md",
@@ -149,8 +154,8 @@
     },
     {
       "path": "skills/architecture-collaboration/references/requirements.md",
-      "bytes": 6254,
-      "sha256": "e069eeb02b276ebf092b758c4f1a92e1a0b1fedb11cd81f509038483f2f05865"
+      "bytes": 6598,
+      "sha256": "0aa076b29ef46062d21863dc29b2d977ce6ad2132be8f8d8028be6098f6597b9"
     },
     {
       "path": "skills/architecture-collaboration/references/verification.md",
@@ -174,8 +179,8 @@
     },
     {
       "path": "skills/architecture-collaboration/SKILL.md",
-      "bytes": 6917,
-      "sha256": "dd4f4f2dd751a19ba7752c7fbea42c5ad6af3e00a4a2469e2c4b8054036c1fa9"
+      "bytes": 9608,
+      "sha256": "bfafa1a5830534e1928b67a318045e607c455ccca0358e4a090652ce45598358"
     },
     {
       "path": "tests/test_library.py",
