@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "errors": [],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 221,
+      "sha256": "bae829d58a4e195e766eaddf5cf1a33eaa500b98daba8a284a96b9a756a3229a"
+    },
+    {
+      "path": "ac_platform/__init__.py",
+      "bytes": 22,
+      "sha256": "1551cf04691f85b4038bfcf7bf43e2289ad75ea5cec74bc65bfd556aa3498bb5"
+    },
+    {
+      "path": "ac_platform/library.py",
+      "bytes": 8766,
+      "sha256": "8ad00c40600a0557685a87373a8e88c27ca0e83dca7aa6f122253a7774fd542d"
+    },
+    {
+      "path": "ac_platform/server.py",
+      "bytes": 7451,
+      "sha256": "f6f5c5f2714d160520f70305075d50c124e08aebb6d5fec9ed7b3afae91826dd"
+    },
+    {
+      "path": "ac_platform/web/app.js",
+      "bytes": 13520,
+      "sha256": "87c5388bb8a3f7ff7c645986d23bd69f0ad8140ecfa1f6c072dd8e3f5bdc70cd"
+    },
+    {
+      "path": "ac_platform/web/index.html",
+      "bytes": 995,
+      "sha256": "897fff36be8ea1844a895c6f6239e6155d2c47139d252a6a2e9e3b68e6664b05"
+    },
+    {
+      "path": "ac_platform/web/style.css",
+      "bytes": 3626,
+      "sha256": "44a29ecbc79f1d0fea925228ffef42bea9640e7a609b7564f69a0befe630c796"
+    },
+    {
+      "path": "app.py",
+      "bytes": 1413,
+      "sha256": "cc75bc30ec6bed0bdea2e5a9ca01be3613c0bad08c4f44d0653360bb010c8625"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 715,
+      "sha256": "8c9e91b4b148dc60e6e3345caa2530cc065f38569e5d508d6cf28d0ad4897f48"
+    },
+    {
+      "path": "config.example.json",
+      "bytes": 501,
+      "sha256": "b6eb13817157b568f0d6ad255c1ee1ce38baf8c2863af6967f7fe1db4288a93a"
+    },
+    {
+      "path": "docs/API.md",
+      "bytes": 1684,
+      "sha256": "762c496a219619fcf063ba66b7a76eafbc4d6f8b30006ca04813ca7f5c537405"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1585,
+      "sha256": "53352edc556c5f0f32e755f199356b6da6a876b461186f3a36bd87dd02b9b7a2"
+    },
+    {
+      "path": "docs/DATA-FORMAT.md",
+      "bytes": 3831,
+      "sha256": "8f617c3f98909491351b5c88f73cee24a93f0c40e5f3224f2416099a535cd332"
+    },
+    {
+      "path": "docs/UPGRADE.md",
+      "bytes": 2506,
+      "sha256": "54e9c9a574e4d40f23b1c2e63120edf62a1dc04f6913c2b165938a429ff39d77"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1891,
+      "sha256": "c0832186fa6babebb8402ba974d8b1f8cefe22edb3b8715ff687fc803c6953fc"
+    },
+    {
+      "path": "docs/WORKFLOW-EXAMPLE.md",
+      "bytes": 10241,
+      "sha256": "e2d6ae3fddcb7065615d0d87b3eac3ea055bd6d533f03bc4c0bddf76e91521b4"
+    },
+    {
+      "path": "examples/demo/blackboard.md",
+      "bytes": 233,
+      "sha256": "5dbb64ac85d58f08221669f7b255f506f8f10c9693819adec5b67e87bc7f0a54"
+    },
+    {
+      "path": "examples/demo/checklist.md",
+      "bytes": 168,
+      "sha256": "2e0759e7c72a4dbbc4eebbd0d8a0f3fc033c35eb837104734db5358f91897152"
+    },
+    {
+      "path": "examples/demo/experts.json",
+      "bytes": 300,
+      "sha256": "4fcd680e90524e56d0994bd2c932ee25db0724d4501e212121b01663fafdfbec"
+    },
+    {
+      "path": "examples/demo/requirements/current.json",
+      "bytes": 1475,
+      "sha256": "82a7c9c6d51c493a5be7f97e1c4c6d89b67f560421f8aab730ae3f5354bc7a37"
+    },
+    {
+      "path": "examples/example-methods.acpack.json",
+      "bytes": 1056,
+      "sha256": "d216d50891b55b6f84544b2981827db0dfa91141adc8d265ca9560c40684840a"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1265,
+      "sha256": "844713489396cfe89ad08586de59eb1d71b06c6eb1243dc2c554669b688da763"
+    },
+    {
+      "path": "README.md",
+      "bytes": 26194,
+      "sha256": "b63f87d6da616737c24aea159417b9bfc621e14a4847b67380d19ff665f3af7d"
+    },
+    {
+      "path": "skills/architecture-collaboration/agents/openai.yaml",
+      "bytes": 332,
+      "sha256": "7b4b397918ea3bbdf92940ade023cdc441a36d3be2fd0a182c6aa22ad5eff853"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/blackboard.md",
+      "bytes": 5948,
+      "sha256": "a4e8b4430924d7139ddba9aab72d703337e305b0acc93944311fee1b9cf35133"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/dialogue.md",
+      "bytes": 4405,
+      "sha256": "9fc2388b6490341411d91c061a9a7666fffaadab18b7ca50118e2a8eb5d4428d"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/execution.md",
+      "bytes": 7975,
+      "sha256": "291e66a09193bdee556cfda5cb0c6f4b1205b4c32f87d631958bcfd81558dee0"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/experts.md",
+      "bytes": 6242,
+      "sha256": "e0961ff838343ee49a44bf518b3ae5694c0b67b68f55dda0b0ddc14c9bc8820f"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/learning.md",
+      "bytes": 6302,
+      "sha256": "1b64f9a10409a5d205da722a3397a6207d796109e6b0e59f3a33b2800ed108c1"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/requirements.md",
+      "bytes": 6254,
+      "sha256": "e069eeb02b276ebf092b758c4f1a92e1a0b1fedb11cd81f509038483f2f05865"
+    },
+    {
+      "path": "skills/architecture-collaboration/references/verification.md",
+      "bytes": 4621,
+      "sha256": "cd0f17541e5aebbbed4a161aeb61e6603365652d04e3b13fa629877440340679"
+    },
+    {
+      "path": "skills/architecture-collaboration/scripts/check_requirements.py",
+      "bytes": 12471,
+      "sha256": "236f68492e32016c84536990f4410e5de74b8acb126b4a685e0461da7fff731f"
+    },
+    {
+      "path": "skills/architecture-collaboration/scripts/check_run.py",
+      "bytes": 10349,
+      "sha256": "8ce755a30400364c54e4f3b50bbf9f7da8d69ec2d6defeb36432566eb6e607ec"
+    },
+    {
+      "path": "skills/architecture-collaboration/scripts/export_traceability.py",
+      "bytes": 6516,
+      "sha256": "304095f1594624ba575c884037859d3442be75df5ad8c7729ab70dba13922b9a"
+    },
+    {
+      "path": "skills/architecture-collaboration/SKILL.md",
+      "bytes": 6917,
+      "sha256": "dd4f4f2dd751a19ba7752c7fbea42c5ad6af3e00a4a2469e2c4b8054036c1fa9"
+    },
+    {
+      "path": "tests/test_library.py",
+      "bytes": 3135,
+      "sha256": "188660d274c72e4b55fd90354de192effd5f1116dbc77688b718da15ff82aaf5"
+    },
+    {
+      "path": "tests/test_portable.py",
+      "bytes": 3158,
+      "sha256": "b1ca70c936a683e3842d8d3da6f469a4bf394d45252d7ffbde780dbfba95cb9c"
+    },
+    {
+      "path": "tools/release_check.py",
+      "bytes": 2001,
+      "sha256": "3270164fe30707a30526e60c98408df9cd6d805668ade9de77f54266f34f0909"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+    }
+  ],
+  "scope": "core only; heuristic scan, not a proof of all confidentiality or rights"
+}

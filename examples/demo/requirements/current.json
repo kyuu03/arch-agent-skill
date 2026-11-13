@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "version": "demo-v1",
+  "parentVersion": null,
+  "project": "示例项目（虚构）",
+  "designRevision": "demo-no-model",
+  "sources": [
+    {
+      "id": "demo-brief",
+      "path": "../blackboard.md",
+      "scope": "虚构示例，不是实际规范依据"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "G-01",
+      "parent": null,
+      "title": "连续日常通路",
+      "statement": "主要日常空间之间应有清楚、可使用的通路。",
+      "acceptance": [
+        "在当前平面与剖面上核对连续性",
+        "有改动时重新核查；不因本轮任务完成删除本要点"
+      ],
+      "sources": [
+        {
+          "id": "demo-brief",
+          "locator": "演示条目"
+        }
+      ],
+      "lifecycle": "active"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "DEMO-01",
+      "requirementIds": [
+        "G-01"
+      ],
+      "status": "paused-by-user",
+      "scope": "展示任务状态与持续要求的区别"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "DEMO-REVIEW",
+      "requirementIds": [
+        "G-01"
+      ],
+      "artifactIds": [],
+      "kind": "user-feedback",
+      "verdict": "recorded",
+      "scope": "仅为虚构界面示例，不代表实际验收",
+      "evidence": [],
+      "quote": "Synthetic example feedback, not actual user acceptance."
+    }
+  ],
+  "artifacts": [],
+  "pendingImpacts": [],
+  "changes": []
+}

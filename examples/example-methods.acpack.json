@@ -1,0 +1,27 @@
+{
+  "schema": "ac-library-pack/v1",
+  "id": "example-methods",
+  "version": "1.0.0",
+  "title": "持续验收方法示例",
+  "author": "Example author",
+  "license": "CC0-1.0",
+  "entries": [
+    {
+      "id": "keep-criteria",
+      "kind": "experience",
+      "title": "局部完成与持续验收分开",
+      "content": "处境：修改后同类问题再次出现。\n期待：保留仍有效的验收要点。\n做法：局部任务结束仅增加本版证据。\n反馈：虚构示例，尚无实际反馈。\n代价：需要维护版本及影响关系。\n反例：一次技术通过不能证明长期适用。",
+      "sources": [
+        {
+          "type": "synthetic-example",
+          "locator": "本演示自行撰写，无真实项目与书籍内容"
+        }
+      ],
+      "verification": "unverified",
+      "sharing": "shareable",
+      "verified_at": null,
+      "review_trigger": "任务范围或适用条件变化"
+    }
+  ],
+  "sha256": "db4331e465eb75fb0d3c26dd608c00d5072e43e24936b743f8fde91f9c3191c0"
+}

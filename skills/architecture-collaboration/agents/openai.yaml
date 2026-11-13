@@ -1,0 +1,4 @@
+interface:
+  display_name: "建筑设计与学习协作"
+  short_description: "以共享黑板协同多领域专家，结合追问、设计、验证与个人经验积累"
+  default_prompt: "使用 $architecture-collaboration，结合我的项目与个人资料组织专家协作、设计推敲、关键追问和修改复核。"

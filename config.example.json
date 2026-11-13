@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "title": "建筑协作 · 公开演示",
+  "project_root": "examples/demo",
+  "data_root": "../local-data/demo-storage",
+  "ledger": "requirements/current.json",
+  "blackboard": "blackboard.md",
+  "checklist": "checklist.md",
+  "experts": "experts.json",
+  "notice": "这是虚构演示项目。项目记录只读；设计操作继续在对话中。资料包管理写入外部数据目录。",
+  "library_mounts": [],
+  "document_mounts": [],
+  "artifacts": []
+}

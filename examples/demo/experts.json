@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "experts": [
+    {
+      "id": "demo-reviewer",
+      "name": "空间使用复核",
+      "family": "虚构示例角色",
+      "activation": "on-demand",
+      "capabilities": [],
+      "openQuestions": [
+        "实际图面尚未提供"
+      ]
+    }
+  ]
+}
