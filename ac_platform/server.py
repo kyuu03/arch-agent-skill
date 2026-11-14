@@ -1,4 +1,5 @@
 import json
+import hashlib
 import mimetypes
 import secrets
 import threading
@@ -36,6 +37,34 @@ class Project:
         p = self.config.get(key)
         return self.project_file(p).read_text('utf-8-sig') if p else '尚未绑定'
 
+    def evidence(self, run_id, event_id, index):
+        paths = list(dict.fromkeys([p for p in [self.config.get('run_log'), *self.config.get('run_logs', [])] if p]))
+        runs = [load(self.project_file(p)) for p in paths]
+        run = next((r for r in runs if r.get('id') == run_id), None)
+        if not run:
+            raise ValueError('日志未绑定')
+        event = next((e for e in run.get('events', []) if e.get('id') == event_id), None)
+        if not event or index < 0 or index >= len(event.get('evidence', [])):
+            raise ValueError('事件证据不存在')
+        entry = event['evidence'][index]
+        if not isinstance(entry, dict) or not isinstance(entry.get('path'), str):
+            raise ValueError('旧记录只有文字定位，未绑定可预览文件')
+        p = self.project_file(entry['path'])
+        if not p.is_file():
+            raise ValueError('证据文件不存在')
+        if p.stat().st_size > 32 * 1024 * 1024:
+            raise ValueError('证据超过32 MiB，请在本地应用查看')
+        raw = p.read_bytes()
+        sha = hashlib.sha256(raw).hexdigest()
+        kind = 'image' if p.suffix.lower() in {'.png', '.jpg', '.jpeg', '.webp'} else 'text' if p.suffix.lower() in {'.md', '.txt', '.json', '.jsonl', '.py', '.js', '.css', '.svg', '.csv'} else 'download'
+        result = {'label': entry.get('label', p.name), 'path': entry['path'], 'kind': kind,
+                  'sha256': sha, 'expectedSHA256': entry.get('sha256'),
+                  'matchesExpected': sha == entry['sha256'] if entry.get('sha256') else None,
+                  'bytes': len(raw), 'truncated': len(raw) > 128 * 1024}
+        if kind == 'text':
+            result['content'] = raw[:128 * 1024].decode('utf-8-sig', errors='replace')
+        return result, raw, p.suffix.lower()
+
     def state(self):
         cfg = self.config
         ledger = load(self.project_file(cfg['ledger']))
@@ -44,6 +73,8 @@ class Project:
                 'ledger': ledger, 'blackboard': self.text('blackboard'), 'checklist': self.text('checklist'),
                 'experts': load(self.project_file(cfg['experts'])) if cfg.get('experts') else {'experts': []},
                 'artifacts': cfg.get('artifacts', []), 'legacy': cfg.get('legacy'),
+                'runLog': load(self.project_file(cfg['run_log'])) if cfg.get('run_log') else None,
+                'runLogs': [load(self.project_file(p)) for p in cfg.get('run_logs', [])],
                 'bindings': {k: cfg.get(k) for k in ('ledger', 'blackboard', 'checklist', 'experts')},
                 'libraries': self.libraries.catalog(),
                 'updatedAt': datetime.now(timezone.utc).isoformat()}
@@ -81,6 +112,15 @@ def serve(config_path, port=8850):
                     return self.respond(200, project.state())
                 if u.path == '/api/session':
                     return self.respond(200, {'token': token})
+                if u.path == '/api/evidence':
+                    q = parse_qs(u.query)
+                    item, raw, suffix = project.evidence(q.get('run', [''])[0], q.get('event', [''])[0], int(q.get('index', ['-1'])[0]))
+                    mode = q.get('mode', ['preview'])[0]
+                    if mode == 'download':
+                        return self.respond(200, raw, 'application/octet-stream', 'evidence' + suffix)
+                    if mode == 'image' and item['kind'] == 'image':
+                        return self.respond(200, raw, mimetypes.guess_type('image' + suffix)[0])
+                    return self.respond(200, item)
                 if u.path == '/health':
                     return self.respond(200, {'app': 'architecture-collaboration', 'version': __version__})
                 if u.path == '/file':
@@ -93,7 +133,7 @@ def serve(config_path, port=8850):
                     p = project.project_file(requested)
                     # Download arbitrary project HTML, rather than executing it on the management origin.
                     return self.respond(200, p.read_bytes(), 'application/octet-stream', 'project-file' + p.suffix)
-                static = {'/': 'index.html', '/app.js': 'app.js', '/style.css': 'style.css'}
+                static = {'/': 'index.html', '/app.js': 'app.js', '/style.css': 'style.css', '/run-log.js': 'run-log.js'}
                 if u.path not in static:
                     return self.respond(404, {'error': '不存在'})
                 p = WEB / static[u.path]

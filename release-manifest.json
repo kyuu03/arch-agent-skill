@@ -9,8 +9,8 @@
     },
     {
       "path": "ac_platform/__init__.py",
-      "bytes": 22,
-      "sha256": "1551cf04691f85b4038bfcf7bf43e2289ad75ea5cec74bc65bfd556aa3498bb5"
+      "bytes": 23,
+      "sha256": "2314738982c77d4945bc327161916784cc1dd59aab9231cc0588c4023e2a457a"
     },
     {
       "path": "ac_platform/library.py",
@@ -19,23 +19,28 @@
     },
     {
       "path": "ac_platform/server.py",
-      "bytes": 7451,
-      "sha256": "f6f5c5f2714d160520f70305075d50c124e08aebb6d5fec9ed7b3afae91826dd"
+      "bytes": 10147,
+      "sha256": "cfd27eb7625578687af145b2c760939088abd17e58b6dc364013d77caadef75d"
     },
     {
       "path": "ac_platform/web/app.js",
-      "bytes": 13520,
-      "sha256": "87c5388bb8a3f7ff7c645986d23bd69f0ad8140ecfa1f6c072dd8e3f5bdc70cd"
+      "bytes": 13664,
+      "sha256": "1718ad66701a7edd70324400dd1f8d64398426b6a0ee7e3d08a953b6d64b8666"
     },
     {
       "path": "ac_platform/web/index.html",
-      "bytes": 995,
-      "sha256": "897fff36be8ea1844a895c6f6239e6155d2c47139d252a6a2e9e3b68e6664b05"
+      "bytes": 1031,
+      "sha256": "6f7f4989e7a61b4521d666fc5837f8dcb7ff0823cceab91bc9597cfbaf6eb53e"
+    },
+    {
+      "path": "ac_platform/web/run-log.js",
+      "bytes": 6438,
+      "sha256": "6f71c88c8c0ab4ca03cd0309ff1032f5d3aec224aaa9b37c547b0393c81c9f15"
     },
     {
       "path": "ac_platform/web/style.css",
-      "bytes": 3626,
-      "sha256": "44a29ecbc79f1d0fea925228ffef42bea9640e7a609b7564f69a0befe630c796"
+      "bytes": 5437,
+      "sha256": "6e18338c866c481c2d9cedacf332e1f7b85056e59314a2975e1bd913e87f9ca2"
     },
     {
       "path": "app.py",
@@ -44,8 +49,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1033,
-      "sha256": "80ce2117b6021b3a36601b2a427e34c4e55e68594a37cd999a212a02048ad337"
+      "bytes": 3510,
+      "sha256": "0948ae03bab2ef1e2de51297c62e4982cca57d4f7c3567f8a76b06953e3998c9"
     },
     {
       "path": "config.example.json",
@@ -69,8 +74,18 @@
     },
     {
       "path": "docs/EFFICIENCY-PATCH.md",
-      "bytes": 2255,
-      "sha256": "b2ab83b8d29952c087b75b10b5e582a3e645b97a41a527ed02730b16f08f07ce"
+      "bytes": 4328,
+      "sha256": "92b2eb7f0b27f39a206aedf6a4cb80b2be0a117f0eefeb201dc7deb64bc1f3dc"
+    },
+    {
+      "path": "docs/FEEDBACK-UPDATE.md",
+      "bytes": 3640,
+      "sha256": "8c05881a811545e9845ed8cba388731ddc11a376e50bef29a32ba90902710f0e"
+    },
+    {
+      "path": "docs/RUN-LOG.md",
+      "bytes": 2785,
+      "sha256": "152e858f725775f6c11e270187b694a3552f601967066848beee01523db3ee8e"
     },
     {
       "path": "docs/UPGRADE.md",
@@ -79,8 +94,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 1891,
-      "sha256": "c0832186fa6babebb8402ba974d8b1f8cefe22edb3b8715ff687fc803c6953fc"
+      "bytes": 2549,
+      "sha256": "91c5c69cb99ed72bfd57427e862d3c43a6911ecccdc6a52422ddc1813889740d"
     },
     {
       "path": "docs/WORKFLOW-EXAMPLE.md",
@@ -119,8 +134,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 26194,
-      "sha256": "b63f87d6da616737c24aea159417b9bfc621e14a4847b67380d19ff665f3af7d"
+      "bytes": 29788,
+      "sha256": "c270bcb4abdb38d895896bf680324694741dcd8ddd77ee189e209ffe06791c78"
     },
     {
       "path": "skills/architecture-collaboration/agents/openai.yaml",
@@ -139,18 +154,18 @@
     },
     {
       "path": "skills/architecture-collaboration/references/execution.md",
-      "bytes": 8304,
-      "sha256": "7c8e3898ae08f19c605d59f4764bc8786e7e71d408ad66ddccc41d5e6f5d60d3"
+      "bytes": 15097,
+      "sha256": "cb52c83c1ddcfd860ab0911bc8a3726ffeb117bdee6e448bb90b7f0c69f45971"
     },
     {
       "path": "skills/architecture-collaboration/references/experts.md",
-      "bytes": 6242,
-      "sha256": "e0961ff838343ee49a44bf518b3ae5694c0b67b68f55dda0b0ddc14c9bc8820f"
+      "bytes": 7012,
+      "sha256": "115456b1819fbc22fd85c52b3e3105293d83f65643bb20eb06ad1adbdc4e91cc"
     },
     {
       "path": "skills/architecture-collaboration/references/learning.md",
-      "bytes": 6302,
-      "sha256": "1b64f9a10409a5d205da722a3397a6207d796109e6b0e59f3a33b2800ed108c1"
+      "bytes": 13499,
+      "sha256": "7aba1bfec1164a3a8337f9edbb30e1c17f04fe9a50fa4ef1dd35b943b4d13326"
     },
     {
       "path": "skills/architecture-collaboration/references/requirements.md",
@@ -159,8 +174,8 @@
     },
     {
       "path": "skills/architecture-collaboration/references/verification.md",
-      "bytes": 4621,
-      "sha256": "cd0f17541e5aebbbed4a161aeb61e6603365652d04e3b13fa629877440340679"
+      "bytes": 5827,
+      "sha256": "9e6d1223feb9a68d8368c4445d3a07dab395b2739b88975a0b2eff6391480e72"
     },
     {
       "path": "skills/architecture-collaboration/scripts/check_requirements.py",
@@ -179,8 +194,13 @@
     },
     {
       "path": "skills/architecture-collaboration/SKILL.md",
-      "bytes": 9608,
-      "sha256": "bfafa1a5830534e1928b67a318045e607c455ccca0358e4a090652ce45598358"
+      "bytes": 11967,
+      "sha256": "9b15e5eecd1bb75122ad97451cfcd235b2f018d2ed5af4b6dc5f7384dc576c4c"
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "bytes": 1732,
+      "sha256": "01995f022a08a74a88d2ccc8c1c18aea66d06bd3c1dd03d7f757819f9f85e4c2"
     },
     {
       "path": "tests/test_library.py",
@@ -189,8 +209,13 @@
     },
     {
       "path": "tests/test_portable.py",
-      "bytes": 3158,
-      "sha256": "b1ca70c936a683e3842d8d3da6f469a4bf394d45252d7ffbde780dbfba95cb9c"
+      "bytes": 3194,
+      "sha256": "331eee736a3a8479c7735858bd15c79dad5f7e4bd4de601b0e629b08f9935aa4"
+    },
+    {
+      "path": "tests/test_run_log.py",
+      "bytes": 1126,
+      "sha256": "8d545e0c020effc28d5ff3d71ce9c9626b5a51ba8ac55297329afd23fe664674"
     },
     {
       "path": "tools/release_check.py",
@@ -199,8 +224,8 @@
     },
     {
       "path": "VERSION",
-      "bytes": 6,
-      "sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+      "bytes": 7,
+      "sha256": "d9efe4074c06b76df743eb109bd414f65043a25ba26b8340c8406a9f2fd2e90b"
     }
   ],
   "scope": "core only; heuristic scan, not a proof of all confidentiality or rights"

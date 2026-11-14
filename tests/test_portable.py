@@ -19,7 +19,7 @@ class PortableTests(unittest.TestCase):
             shutil.copytree(ROOT,core,ignore=shutil.ignore_patterns('__pycache__','.git','*.log'))
             data=temp/'personal-data'
             subprocess.run([sys.executable,'-B',str(core/'app.py'),'--init-data',str(data)],check=True,stdout=subprocess.DEVNULL)
-            process=subprocess.Popen([sys.executable,'-B',str(core/'app.py'),'--config',str(data/'local.config.json'),'--port','0'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+            process=subprocess.Popen([sys.executable,'-B',str(core/'app.py'),'--config',str(data/'local.config.json'),'--port','0'],stdout=subprocess.DEVNULL)
             try:
                 runtime=data/'storage/runtime.json'
                 for _ in range(100):
@@ -28,15 +28,16 @@ class PortableTests(unittest.TestCase):
                     time.sleep(.05)
                 self.assertTrue(runtime.exists())
                 url=json.loads(runtime.read_text('utf-8'))['url']
+                opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
                 def get(route):
-                    return json.load(urllib.request.urlopen(url+route,timeout=5))
+                    return json.load(opener.open(url+route,timeout=5))
                 state=get('/api/state')
                 self.assertEqual(len(state['ledger']['requirements']),1)
                 self.assertEqual(state['libraries'],[])
                 token=get('/api/session')['token']
                 def post(route,obj,origin=None):
                     req=urllib.request.Request(url+route,json.dumps(obj).encode(),headers={'Content-Type':'application/json','Origin':origin or url,'X-AC-Token':token})
-                    return json.load(urllib.request.urlopen(req,timeout=5))
+                    return json.load(opener.open(req,timeout=5))
                 pack=json.loads((core/'examples/example-methods.acpack.json').read_text('utf-8'))
                 self.assertEqual(post('/api/packs/preview',{'pack':pack})['count'],1)
                 with self.assertRaises(urllib.error.HTTPError) as error:post('/api/packs/install',{'pack':pack,'confirmedSha256':pack['sha256']},'https://foreign.invalid')
