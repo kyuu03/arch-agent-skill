@@ -10,7 +10,7 @@
     {
       "path": "ac_platform/__init__.py",
       "bytes": 23,
-      "sha256": "2314738982c77d4945bc327161916784cc1dd59aab9231cc0588c4023e2a457a"
+      "sha256": "2a90bd8d0c6fd28571234fe69e0b576ffb2d8d805088ff7297a3c42dd44f7bbb"
     },
     {
       "path": "ac_platform/library.py",
@@ -49,8 +49,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3510,
-      "sha256": "0948ae03bab2ef1e2de51297c62e4982cca57d4f7c3567f8a76b06953e3998c9"
+      "bytes": 4149,
+      "sha256": "bf6a4d9fb387cf4d5297d8b8d66c7a0695789b7e1774a43a416c5f3a6800182f"
     },
     {
       "path": "config.example.json",
@@ -81,6 +81,11 @@
       "path": "docs/FEEDBACK-UPDATE.md",
       "bytes": 3640,
       "sha256": "8c05881a811545e9845ed8cba388731ddc11a376e50bef29a32ba90902710f0e"
+    },
+    {
+      "path": "docs/GETTING-STARTED.md",
+      "bytes": 3272,
+      "sha256": "1007c74f94772b8303542d238cc70e5d18423f373c8d99bef3c3d4e6be06e919"
     },
     {
       "path": "docs/RUN-LOG.md",
@@ -134,8 +139,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 29788,
-      "sha256": "c270bcb4abdb38d895896bf680324694741dcd8ddd77ee189e209ffe06791c78"
+      "bytes": 30017,
+      "sha256": "4cbe255fe6ead6608352c76bb7ca4ff57ac29d2ebe396aa5f8b402539c10e849"
     },
     {
       "path": "skills/architecture-collaboration/agents/openai.yaml",
@@ -168,6 +173,11 @@
       "sha256": "7aba1bfec1164a3a8337f9edbb30e1c17f04fe9a50fa4ef1dd35b943b4d13326"
     },
     {
+      "path": "skills/architecture-collaboration/references/onboarding.md",
+      "bytes": 5157,
+      "sha256": "96cb7738c4c22c5b779ce711417023670bf9c46d4dc55f0f74776dd48da6ae98"
+    },
+    {
       "path": "skills/architecture-collaboration/references/requirements.md",
       "bytes": 6598,
       "sha256": "0aa076b29ef46062d21863dc29b2d977ce6ad2132be8f8d8028be6098f6597b9"
@@ -194,8 +204,8 @@
     },
     {
       "path": "skills/architecture-collaboration/SKILL.md",
-      "bytes": 11967,
-      "sha256": "9b15e5eecd1bb75122ad97451cfcd235b2f018d2ed5af4b6dc5f7384dc576c4c"
+      "bytes": 12556,
+      "sha256": "61f6074dd8bc329a634c893536d12656d952d64671202cbea3d3580a26f4c63b"
     },
     {
       "path": "tests/test_evidence.py",
@@ -225,7 +235,7 @@
     {
       "path": "VERSION",
       "bytes": 7,
-      "sha256": "d9efe4074c06b76df743eb109bd414f65043a25ba26b8340c8406a9f2fd2e90b"
+      "sha256": "653d69a4116e95011cd5a565181a4967e2e300deb54e793a1e35066f8e3a4b28"
     }
   ],
   "scope": "core only; heuristic scan, not a proof of all confidentiality or rights"
